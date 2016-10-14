@@ -1,3 +1,6 @@
 ---
+- name: Install pip
+  package: name=python-pip state=present
+
 - name: Install Mercurial
-  apt: pkg=mercurial state=present
+  pip: name=mercurial state=present  version={{ hg_version }}
