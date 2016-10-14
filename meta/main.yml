@@ -11,4 +11,6 @@ galaxy_info:
     - trusty
   categories:
   - development
-dependencies: []
+dependencies:
+  - { role: azavea.pip }
+  - { role: azavea.python, python_development: True }

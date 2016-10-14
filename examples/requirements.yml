@@ -1,0 +1,3 @@
+---
+- { role: azavea.pip }
+- { role: azavea.python, python_development: True }
