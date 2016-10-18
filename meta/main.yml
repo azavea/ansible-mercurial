@@ -4,11 +4,13 @@ galaxy_info:
   description: An Ansible role for installing Mercurial.
   company: Azavea Inc.
   license: Apache
-  min_ansible_version: 1.2
+  min_ansible_version: 2.0
   platforms:
   - name: Ubuntu
     versions:
     - trusty
   categories:
   - development
-dependencies: []
+dependencies:
+  - { role: azavea.pip }
+  - { role: azavea.python, python_development: True }
