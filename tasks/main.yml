@@ -1,3 +1,4 @@
 ---
 - name: Install Mercurial
-  pip: name=mercurial state=present  version={{ hg_version }}
+  pip: name=mercurial version="{{ hg_version }}"
+       state=present
